@@ -1,0 +1,15 @@
+[package]
+name = "emulation"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.71"
+futures = { version = "0.3", default-features = false, features = ["alloc"] }
+futures-async-stream = "0.2.6"
+thiserror = "1"
+tokio = { version = "0.2", package = "madsim-tokio", features = ["rt", "macros"] }
+async-trait = "0.1"
+daggy = "0.8.0"
